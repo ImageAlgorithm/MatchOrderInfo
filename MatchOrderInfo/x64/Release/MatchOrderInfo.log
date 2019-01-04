@@ -1,0 +1,77 @@
+﻿  MatchOrderInfo.cpp
+MatchOrderInfo.cpp(77): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(83): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(89): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(95): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(101): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(107): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(143): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(149): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(155): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(161): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(167): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(173): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(179): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(210): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(216): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(221): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(225): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(229): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(235): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(241): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(247): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(254): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(260): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(266): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(272): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(278): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(284): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(290): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(296): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(302): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(308): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(314): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(320): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(326): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(333): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(339): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(346): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(352): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(358): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(364): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(370): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(376): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(382): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(389): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(395): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(401): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(408): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(414): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(420): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(426): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(432): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(438): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(444): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(450): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(456): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(462): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(468): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(474): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(503): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(545): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(548): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(554): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(674): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(708): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(709): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(726): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(727): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+MatchOrderInfo.cpp(841): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+  OCR.cpp
+OCR.cpp(13): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+OCR.cpp(17): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+  正在生成代码
+  All 401 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成代码的生成
+  MatchOrderInfo.vcxproj -> E:\vs2015Project\MatchOrderInfo\x64\Release\MatchOrderInfo.exe
+  MatchOrderInfo.vcxproj -> E:\vs2015Project\MatchOrderInfo\x64\Release\MatchOrderInfo.pdb (Full PDB)

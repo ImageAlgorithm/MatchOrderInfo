@@ -1,0 +1,82 @@
+﻿  OCR.cpp
+e:\vs2015project\matchorderinfo\matchorderinfo\ocr.cpp(9): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\ocr.cpp(13): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+  MatchOrderInfo.cpp
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(73): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(79): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(85): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(91): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(97): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(103): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(139): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(145): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(151): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(157): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(163): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(169): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(175): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(206): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(212): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(217): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(221): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(225): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(231): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(237): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(243): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(250): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(256): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(262): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(268): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(274): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(280): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(286): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(292): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(298): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(304): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(310): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(316): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(322): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(329): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(335): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(342): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(348): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(354): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(360): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(366): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(372): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(378): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(385): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(391): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(397): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(404): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(410): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(416): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(422): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(428): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(434): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(440): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(446): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(452): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(458): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(464): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(470): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(499): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(541): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(544): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(550): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(670): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(704): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(705): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(722): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(723): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\vs2015project\matchorderinfo\matchorderinfo\matchorderinfo.cpp(837): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+  正在生成代码...
+OCR.obj : error LNK2019: 无法解析的外部符号 "public: __cdecl tesseract::TessBaseAPI::TessBaseAPI(void)" (??0TessBaseAPI@tesseract@@QEAA@XZ)，该符号在函数 "bool __cdecl OCR::getResult(class cv::Mat,int,int,int,int,char const *,enum tesseract::PageSegMode,char * &)" (?getResult@OCR@@YA_NVMat@cv@@HHHHPEBDW4PageSegMode@tesseract@@AEAPEAD@Z) 中被引用
+OCR.obj : error LNK2019: 无法解析的外部符号 "public: bool __cdecl tesseract::TessBaseAPI::SetVariable(char const *,char const *)" (?SetVariable@TessBaseAPI@tesseract@@QEAA_NPEBD0@Z)，该符号在函数 "bool __cdecl OCR::getResult(class cv::Mat,int,int,int,int,char const *,enum tesseract::PageSegMode,char * &)" (?getResult@OCR@@YA_NVMat@cv@@HHHHPEBDW4PageSegMode@tesseract@@AEAPEAD@Z) 中被引用
+OCR.obj : error LNK2019: 无法解析的外部符号 "public: int __cdecl tesseract::TessBaseAPI::Init(char const *,char const *,enum tesseract::OcrEngineMode,char * *,int,class GenericVector<class STRING> const *,class GenericVector<class STRING> const *,bool)" (?Init@TessBaseAPI@tesseract@@QEAAHPEBD0W4OcrEngineMode@2@PEAPEADHPEBV?$GenericVector@VSTRING@@@@3_N@Z)，该符号在函数 "public: int __cdecl tesseract::TessBaseAPI::Init(char const *,char const *)" (?Init@TessBaseAPI@tesseract@@QEAAHPEBD0@Z) 中被引用
+OCR.obj : error LNK2019: 无法解析的外部符号 "public: void __cdecl tesseract::TessBaseAPI::SetPageSegMode(enum tesseract::PageSegMode)" (?SetPageSegMode@TessBaseAPI@tesseract@@QEAAXW4PageSegMode@2@@Z)，该符号在函数 "bool __cdecl OCR::getResult(class cv::Mat,int,int,int,int,char const *,enum tesseract::PageSegMode,char * &)" (?getResult@OCR@@YA_NVMat@cv@@HHHHPEBDW4PageSegMode@tesseract@@AEAPEAD@Z) 中被引用
+OCR.obj : error LNK2019: 无法解析的外部符号 "public: void __cdecl tesseract::TessBaseAPI::SetImage(unsigned char const *,int,int,int,int)" (?SetImage@TessBaseAPI@tesseract@@QEAAXPEBEHHHH@Z)，该符号在函数 "bool __cdecl OCR::getResult(class cv::Mat,int,int,int,int,char const *,enum tesseract::PageSegMode,char * &)" (?getResult@OCR@@YA_NVMat@cv@@HHHHPEBDW4PageSegMode@tesseract@@AEAPEAD@Z) 中被引用
+OCR.obj : error LNK2019: 无法解析的外部符号 "public: int __cdecl tesseract::TessBaseAPI::Recognize(class ETEXT_DESC *)" (?Recognize@TessBaseAPI@tesseract@@QEAAHPEAVETEXT_DESC@@@Z)，该符号在函数 "bool __cdecl OCR::getResult(class cv::Mat,int,int,int,int,char const *,enum tesseract::PageSegMode,char * &)" (?getResult@OCR@@YA_NVMat@cv@@HHHHPEBDW4PageSegMode@tesseract@@AEAPEAD@Z) 中被引用
+OCR.obj : error LNK2019: 无法解析的外部符号 "public: char * __cdecl tesseract::TessBaseAPI::GetUTF8Text(void)" (?GetUTF8Text@TessBaseAPI@tesseract@@QEAAPEADXZ)，该符号在函数 "bool __cdecl OCR::getResult(class cv::Mat,int,int,int,int,char const *,enum tesseract::PageSegMode,char * &)" (?getResult@OCR@@YA_NVMat@cv@@HHHHPEBDW4PageSegMode@tesseract@@AEAPEAD@Z) 中被引用
+OCR.obj : error LNK2019: 无法解析的外部符号 "public: void __cdecl tesseract::TessBaseAPI::End(void)" (?End@TessBaseAPI@tesseract@@QEAAXXZ)，该符号在函数 "bool __cdecl OCR::getResult(class cv::Mat,int,int,int,int,char const *,enum tesseract::PageSegMode,char * &)" (?getResult@OCR@@YA_NVMat@cv@@HHHHPEBDW4PageSegMode@tesseract@@AEAPEAD@Z) 中被引用
+E:\vs2015Project\MatchOrderInfo\x64\Debug\MatchOrderInfo.exe : fatal error LNK1120: 8 个无法解析的外部命令
