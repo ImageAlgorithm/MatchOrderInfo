@@ -1,5 +1,5 @@
-/********************************************************************************
-* ÓÃÓÚµÃµ½¶©µ¥µÄÄÚÈİºÍ¶©µ¥ÄÚÈİµÄ½âÎö£¬·Ö±ğµÃµ½½ğ¶î£¬½»Ò×Ê±¼ä£¬½»Ò×µ¥ºÅºÍÉÌ»§µ¥ºÅ
+ï»¿/********************************************************************************
+* ç”¨äºå¾—åˆ°è®¢å•çš„å†…å®¹å’Œè®¢å•å†…å®¹çš„è§£æï¼Œåˆ†åˆ«å¾—åˆ°é‡‘é¢ï¼Œäº¤æ˜“æ—¶é—´ï¼Œäº¤æ˜“å•å·å’Œå•†æˆ·å•å·
 ********************************************************************************/
 
 #include <iostream>
@@ -10,15 +10,15 @@ using namespace std;
 using namespace cv;
 
 //************************************
-// Method:    Write£º´´½¨txt£¬²¢Ğ´ÈëÊı¾İ
+// Method:    Writeï¼šåˆ›å»ºtxtï¼Œå¹¶å†™å…¥æ•°æ®
 // FullName:  Write
 // Access:    public 
 // Returns:   bool
 // Qualifier:
-// Parameter: const string strFolder£ºÎÄ¼şµÄ±£´æÂ·¾¶("C:\\Users\\White\\Desktop")
-// Parameter: const string strFilename£ºÎÄ¼şÃû(test.txt)
-// Parameter: string strConternt£ºÒª±»Ğ´µ½ÎÄ¼şÖĞµÄÄÚÈİ
-// Parameter: bool bOver£ºÊÇ·ñ¸²¸ÇÔ­ÓĞÄÚÈİ£¨true£º¸²¸Ç£¬false£º²»¸²¸Ç£¬Ä¬ÈÏÖµfalse£©
+// Parameter: const string strFolderï¼šæ–‡ä»¶çš„ä¿å­˜è·¯å¾„("C:\\Users\\White\\Desktop")
+// Parameter: const string strFilenameï¼šæ–‡ä»¶å(test.txt)
+// Parameter: string strConterntï¼šè¦è¢«å†™åˆ°æ–‡ä»¶ä¸­çš„å†…å®¹
+// Parameter: bool bOverï¼šæ˜¯å¦è¦†ç›–åŸæœ‰å†…å®¹ï¼ˆtrueï¼šè¦†ç›–ï¼Œfalseï¼šä¸è¦†ç›–ï¼Œé»˜è®¤å€¼falseï¼‰
 //************************************
 bool Write(const string strFolder, const string strFilename, string strConternt, bool bOver = false)
 {
@@ -30,7 +30,7 @@ bool Write(const string strFolder, const string strFilename, string strConternt,
 	string strPath = strFolder + "\\" + strFilename;
 	if (bOver)
 	{
-		ofstream fout(strPath); //¸²¸ÇÔ­ÓĞÄÚÈİ
+		ofstream fout(strPath); //è¦†ç›–åŸæœ‰å†…å®¹
 		if (!fout)
 		{
 			cout << "File Not Opened" << endl;
@@ -43,7 +43,7 @@ bool Write(const string strFolder, const string strFilename, string strConternt,
 	}
 	else
 	{
-		ofstream fout(strPath, ios::app); //²»¸²¸Ç
+		ofstream fout(strPath, ios::app); //ä¸è¦†ç›–
 		if (!fout)
 		{
 			cout << "File Not Opened" << endl;
@@ -57,22 +57,22 @@ bool Write(const string strFolder, const string strFilename, string strConternt,
 }
 
 //************************************
-// Method:    isQQ£ºÅĞ¶ÏÊÇ²»ÊÇqq½ØÍ¼
+// Method:    isQQï¼šåˆ¤æ–­æ˜¯ä¸æ˜¯qqæˆªå›¾
 // FullName:  isQQ
 // Access:    public 
 // Returns:   bool
 // Qualifier:
-// Parameter: string res£º½á¹û
+// Parameter: string resï¼šç»“æœ
 //************************************
 bool isQQ(string res)
 {
 	int num = 0;
-	string st1 = "½»Ò×Ê±¼ä";
-	string st2 = "½»Ò×¶©µ¥";
-	string st3 = "ÉÌ»§¶©µ¥";
-	string st4 = "ĞŞ¸ÄÃÜÂë";
-	string st5 = "½ğ¶î";
-	string st6 = "ÉÌÆ·";
+	string st1 = "äº¤æ˜“æ—¶é—´";
+	string st2 = "äº¤æ˜“è®¢å•";
+	string st3 = "å•†æˆ·è®¢å•";
+	string st4 = "ä¿®æ”¹å¯†ç ";
+	string st5 = "é‡‘é¢";
+	string st6 = "å•†å“";
 	int nRe1 = -1;
 	nRe1 = res.find(st1);
 	if (nRe1 >= 0)
@@ -121,24 +121,24 @@ bool isQQ(string res)
 }
 
 //************************************
-// Method:    isWeChat£ºÅĞ¶ÏÊÇ²»ÊÇÎ¢ĞÅ½ØÍ¼
+// Method:    isWeChatï¼šåˆ¤æ–­æ˜¯ä¸æ˜¯å¾®ä¿¡æˆªå›¾
 // FullName:  isWeChat
 // Access:    public 
 // Returns:   bool
 // Qualifier:
-// Parameter: string res£º½á¹û
+// Parameter: string resï¼šç»“æœ
 //************************************
 bool isWeChat(string res)
 {
 	int num = 0;
-	//½ØÍ¼ÎªÎ¢ĞÅÍ¼Æ¬
-	string st1 = "Ö§¸¶Ê±¼ä";
-	string st2 = "Ö§¸¶·½Ê½";
-	string st3 = "½»Ò×µ¥ºÅ";
-	string st4 = "ÉÌ»§µ¥ºÅ";
-	string st5 = "ÔÚ´ËÉÌ»§";
-	string st6 = "³äÖµ·şÎñ";
-	string st7 = "µ±Ç°×´Ì¬";
+	//æˆªå›¾ä¸ºå¾®ä¿¡å›¾ç‰‡
+	string st1 = "æ”¯ä»˜æ—¶é—´";
+	string st2 = "æ”¯ä»˜æ–¹å¼";
+	string st3 = "äº¤æ˜“å•å·";
+	string st4 = "å•†æˆ·å•å·";
+	string st5 = "åœ¨æ­¤å•†æˆ·";
+	string st6 = "å……å€¼æœåŠ¡";
+	string st7 = "å½“å‰çŠ¶æ€";
 	int re1 = -1;
 	re1 = res.find(st1);
 	if (re1 >= 0) 
@@ -192,12 +192,12 @@ bool isWeChat(string res)
 }
 
 //************************************
-// Method:    checkError£º¾ÀÕıÊ¶±ğ½á¹ûÖĞµÄ´íÎó
+// Method:    checkErrorï¼šçº æ­£è¯†åˆ«ç»“æœä¸­çš„é”™è¯¯
 // FullName:  checkError
 // Access:    public 
 // Returns:   bool
 // Qualifier:
-// Parameter: string & srcResult£º½á¹û
+// Parameter: string & srcResultï¼šç»“æœ
 //************************************
 bool checkError(string &srcResult)
 {
@@ -205,19 +205,19 @@ bool checkError(string &srcResult)
 	{
 		return false;
 	}
-	//È¥µôÊ¶±ğ½á¹ûÖĞµÄ¿Õ¸ñ
+	//å»æ‰è¯†åˆ«ç»“æœä¸­çš„ç©ºæ ¼
 	int nIndex = 0;
 	while ((nIndex = srcResult.find(' ', nIndex)) != string::npos)
 	{
 		srcResult.erase(nIndex, 1);
 	}
-	//È¥µô"×Ö·û
+	//å»æ‰"å­—ç¬¦
 	nIndex = 0;
 	while ((nIndex = srcResult.find('"', nIndex)) != string::npos)
 	{
 		srcResult.erase(nIndex, 1);
 	}
-	//È¥µôËùÓĞµÄ»»ĞĞ·û
+	//å»æ‰æ‰€æœ‰çš„æ¢è¡Œç¬¦
 	int nIdx = srcResult.find("\n");
 	while (nIdx >= 0)
 	{
@@ -225,29 +225,29 @@ bool checkError(string &srcResult)
 		nIdx = srcResult.find("\n");
 	}
 
-	//×Ö·û´®¾À´í
-	int nd = srcResult.find("½ğÈ§");
+	//å­—ç¬¦ä¸²çº é”™
+	int nd = srcResult.find("é‡‘é¢§");
 	if (nd >= 0)
 	{
-		srcResult.replace(nd, 4, "½ğ¶î");
+		srcResult.replace(nd, 4, "é‡‘é¢");
 	}
 	nd = -1;
-	nd = srcResult.find("½ğÆµ");
+	nd = srcResult.find("é‡‘é¢‘");
 	if (nd >= 0)
 	{
-		srcResult.replace(nd, 4, "½ğ¶î");
+		srcResult.replace(nd, 4, "é‡‘é¢");
 	}
 	nd = -1;
-	nd = srcResult.find("½ğ¡¦¶î");
+	nd = srcResult.find("é‡‘Ë‡é¢");
 	if (nd >= 0)
 	{
-		srcResult.replace(nd, 6, "½ğ¶î");
+		srcResult.replace(nd, 6, "é‡‘é¢");
 	}
 	nd = -1;
-	nd = srcResult.find("½ğ#");
+	nd = srcResult.find("é‡‘#");
 	if (nd >= 0)
 	{
-		srcResult.replace(nd, 3, "½ğ¶î");
+		srcResult.replace(nd, 3, "é‡‘é¢");
 	}
 
 	nd = -1;
@@ -260,73 +260,73 @@ bool checkError(string &srcResult)
 	nd = srcResult.find("%#615.607");
 	if (nd >= 0)
 	{
-		srcResult.replace(nd, 9, "½ğ¶î615.60Ôª");
+		srcResult.replace(nd, 9, "é‡‘é¢615.60å…ƒ");
 	}
 	nd = -1;
-	nd = srcResult.find("&-òª615.607.");
+	nd = srcResult.find("&-é¢¡615.607.");
 	if (nd >= 0)
 	{
-		srcResult.replace(nd, 12, "½ğ¶î615.60Ôª");
+		srcResult.replace(nd, 12, "é‡‘é¢615.60å…ƒ");
 	}
 	nd = -1;
-	nd = srcResult.find("aom615.60Ôª");
+	nd = srcResult.find("aom615.60å…ƒ");
 	if (nd >= 0)
 	{
-		srcResult.replace(nd, 11, "½ğ¶î615.60Ôª");
+		srcResult.replace(nd, 11, "é‡‘é¢615.60å…ƒ");
 	}
 	nd = -1;
-	nd = srcResult.find("E283.10Ôª");
+	nd = srcResult.find("E283.10å…ƒ");
 	if (nd >= 0)
 	{
-		srcResult.replace(nd, 9, "½ğ¶î283.10Ôª");
+		srcResult.replace(nd, 9, "é‡‘é¢283.10å…ƒ");
 	}
 	nd = -1;
 	nd = srcResult.find("#&463.6070");
 	if (nd >= 0)
 	{
-		srcResult.replace(nd, 10, "½ğ¶î463.60Ôª");
+		srcResult.replace(nd, 10, "é‡‘é¢463.60å…ƒ");
 	}
 	nd = -1;
 	nd = srcResult.find("##463.6077.");
 	if (nd >= 0)
 	{
-		srcResult.replace(nd, 11, "½ğ¶î463.60Ôª");
+		srcResult.replace(nd, 11, "é‡‘é¢463.60å…ƒ");
 	}
 	nd = -1;
 	nd = srcResult.find("s#57.0077");
 	if (nd >= 0)
 	{
-		srcResult.replace(nd, 9, "½ğ¶î57.00Ôª");
+		srcResult.replace(nd, 9, "é‡‘é¢57.00å…ƒ");
 	}
 	nd = -1;
 	nd = srcResult.find("#m311.6070");
 	if (nd >= 0)
 	{
-		srcResult.replace(nd, 10, "½ğ¶î331.60Ôª");
+		srcResult.replace(nd, 10, "é‡‘é¢331.60å…ƒ");
 	}
 	nd = -1;
-	nd = srcResult.find("E463.60Ôª");
+	nd = srcResult.find("E463.60å…ƒ");
 	if (nd >= 0)
 	{
-		srcResult.replace(nd, 9, "½ğ¶î463.60Ôª");
+		srcResult.replace(nd, 9, "é‡‘é¢463.60å…ƒ");
 	}
 	nd = -1;
-	nd = srcResult.find("Ü¿Ò×µ¥ºÅ");
+	nd = srcResult.find("èŠ¸æ˜“å•å·");
 	if (nd >= 0)
 	{
-		srcResult.replace(nd, 8, "½»Ò×µ¥ºÅ");
+		srcResult.replace(nd, 8, "äº¤æ˜“å•å·");
 	}
 	nd = -1;
-	nd = srcResult.find("·ÒÒ×µ¥ºÅ");
+	nd = srcResult.find("èŠ¬æ˜“å•å·");
 	if (nd >= 0)
 	{
-		srcResult.replace(nd, 8, "½»Ò×µ¥ºÅ");
+		srcResult.replace(nd, 8, "äº¤æ˜“å•å·");
 	}
 	nd = -1;
-	nd = srcResult.find("½»Ò×i¶¡µ¥");
+	nd = srcResult.find("äº¤æ˜“iä¸å•");
 	if (nd >= 0)
 	{
-		srcResult.replace(nd, 9, "½»Ò×¶©µ¥");
+		srcResult.replace(nd, 9, "äº¤æ˜“è®¢å•");
 	}
 
 	nd = -1;
@@ -343,102 +343,102 @@ bool checkError(string &srcResult)
 	}
 
 	nd = -1;
-	nd = srcResult.find("ÉÌ¡¦Æ·");
+	nd = srcResult.find("å•†Ë‡å“");
 	if (nd >= 0)
 	{
-		srcResult.replace(nd, 6, "ÉÌÆ·");
+		srcResult.replace(nd, 6, "å•†å“");
 	}
 	nd = -1;
-	nd = srcResult.find("CeÔª±¦");
+	nd = srcResult.find("Ceå…ƒå®");
 	if (nd >= 0)
 	{
-		srcResult.replace(nd, 6, "ÉÌÆ·Ôª±¦");
+		srcResult.replace(nd, 6, "å•†å“å…ƒå®");
 	}
 	nd = -1;
-	nd = srcResult.find("%&Ôª±¦");
+	nd = srcResult.find("%&å…ƒå®");
 	if (nd >= 0)
 	{
-		srcResult.replace(nd, 6, "ÉÌÆ·Ôª±¦");
+		srcResult.replace(nd, 6, "å•†å“å…ƒå®");
 	}
 	nd = -1;
-	nd = srcResult.find("ÉÌ&Ôª±¦");
+	nd = srcResult.find("å•†&å…ƒå®");
 	if (nd >= 0)
 	{
-		srcResult.replace(nd, 7, "ÉÌÆ·Ôª±¦");
+		srcResult.replace(nd, 7, "å•†å“å…ƒå®");
 	}
 	nd = -1;
-	nd = srcResult.find("B-?Ôª±¦");
+	nd = srcResult.find("B-?å…ƒå®");
 	if (nd >= 0)
 	{
-		srcResult.replace(nd, 7, "ÉÌÆ·Ôª±¦");
+		srcResult.replace(nd, 7, "å•†å“å…ƒå®");
 	}
 	nd = -1;
-	nd = srcResult.find("ÉÌêÌÔªÊÒ");
+	nd = srcResult.find("å•†æ™å…ƒå®¤");
 	if (nd >= 0)
 	{
-		srcResult.replace(nd, 8, "ÉÌÆ·Ôª±¦");
+		srcResult.replace(nd, 8, "å•†å“å…ƒå®");
 	}
 	nd = -1;
-	nd = srcResult.find("Ö§¸¶Ê±¼ä_");
+	nd = srcResult.find("æ”¯ä»˜æ—¶é—´_");
 	if (nd >= 0)
 	{
-		srcResult.replace(nd, 9, "Ö§¸¶Ê±¼ä");
+		srcResult.replace(nd, 9, "æ”¯ä»˜æ—¶é—´");
 	}
 
 	nd = -1;
-	nd = srcResult.find("½»Ò×µ¥ºÅ_");
+	nd = srcResult.find("äº¤æ˜“å•å·_");
 	if (nd >= 0)
 	{
-		srcResult.replace(nd, 9, "½»Ò×µ¥ºÅ");
+		srcResult.replace(nd, 9, "äº¤æ˜“å•å·");
 	}
 	nd = -1;
-	nd = srcResult.find("½»Ò×µ¥ºÅ¡¦");
+	nd = srcResult.find("äº¤æ˜“å•å·Ë‡");
 	if (nd >= 0)
 	{
-		srcResult.replace(nd, 10, "½»Ò×µ¥ºÅ");
+		srcResult.replace(nd, 10, "äº¤æ˜“å•å·");
 	}
 	nd = -1;
 	nd = srcResult.find("#4#%-42");
 	if (nd >= 0)
 	{
-		srcResult.replace(nd, 7, "½»Ò×µ¥ºÅ42");
+		srcResult.replace(nd, 7, "äº¤æ˜“å•å·42");
 	}
 
 	nd = -1;
-	nd = srcResult.find("ÉÌ»§µ¥ºÅ_");
+	nd = srcResult.find("å•†æˆ·å•å·_");
 	if (nd >= 0)
 	{
-		srcResult.replace(nd, 9, "ÉÌ»§µ¥ºÅ");
+		srcResult.replace(nd, 9, "å•†æˆ·å•å·");
 	}
 	nd = -1;
-	nd = srcResult.find("ÉÌ»§µ¥ºÅ¡¦");
+	nd = srcResult.find("å•†æˆ·å•å·Ë‡");
 	if (nd >= 0)
 	{
-		srcResult.replace(nd, 10, "ÉÌ»§µ¥ºÅ");
+		srcResult.replace(nd, 10, "å•†æˆ·å•å·");
 	}
 	nd = -1;
 	nd = srcResult.find("HPRS-");
 	if (nd >= 0)
 	{
-		srcResult.replace(nd, 5, "ÉÌ»§µ¥ºÅ");
+		srcResult.replace(nd, 5, "å•†æˆ·å•å·");
 	}
 	nd = -1;
-	nd = srcResult.find("ÎÄ¸¶Ê±¼ä¡¦");
+	nd = srcResult.find("æ–‡ä»˜æ—¶é—´Ë‡");
 	if (nd >= 0)
 	{
-		srcResult.replace(nd, 10, "Ö§¸¶Ê±¼ä");
+		srcResult.replace(nd, 10, "æ”¯ä»˜æ—¶é—´");
 	}
 	nd = -1;
-	nd = srcResult.find("Ö§¸¶·½ÎÒ");
+	nd = srcResult.find("æ”¯ä»˜æ–¹æˆ‘");
 	if (nd >= 0)
 	{
-		srcResult.replace(nd, 8, "Ö§¸¶·½Ê½");
+		srcResult.replace(nd, 8, "æ”¯ä»˜æ–¹å¼");
 	}
 	nd = -1;
-	nd = srcResult.find("ĞŞ¸ÄÃÜÂë¡µ");
+	nd = srcResult.find("ä¿®æ”¹å¯†ç ã€‰");
 	if (nd >= 0)
 	{
-		srcResult.replace(nd, 9, "ĞŞ¸ÄÃÜÂë");
+		srcResult.replace(nd, 9, "ä¿®æ”¹å¯†ç ");
 	}
 	nd = -1;
 	nd = srcResult.find("product201");
@@ -447,46 +447,46 @@ bool checkError(string &srcResult)
 		srcResult.replace(nd, 10, "product_201");
 	}
 	nd = -1;
-	nd = srcResult.find("½»Ò×ÈÉ¶¡µ¥");
+	nd = srcResult.find("äº¤æ˜“å£¬ä¸å•");
 	if (nd >= 0)
 	{
-		srcResult.replace(nd, 10, "½»Ò×¶©µ¥");
+		srcResult.replace(nd, 10, "äº¤æ˜“è®¢å•");
 	}
 	nd = -1;
-	nd = srcResult.find("%4ÈÉ¶¡µ¥");
+	nd = srcResult.find("%4å£¬ä¸å•");
 	if (nd >= 0)
 	{
-		srcResult.replace(nd, 8, "½»Ò×¶©µ¥");
+		srcResult.replace(nd, 8, "äº¤æ˜“è®¢å•");
 	}
 	nd = -1;
-	nd = srcResult.find("ĞŞ¸Ä¿ßÂë");
+	nd = srcResult.find("ä¿®æ”¹çªŸç ");
 	if (nd >= 0)
 	{
-		srcResult.replace(nd, 8, "ĞŞ¸ÄÃÜÂë");
+		srcResult.replace(nd, 8, "ä¿®æ”¹å¯†ç ");
 	}
 	nd = -1;
-	nd = srcResult.find("ĞŞ¸ÄÃÜ¸Ñ");
+	nd = srcResult.find("ä¿®æ”¹å¯†ç§†");
 	if (nd >= 0)
 	{
-		srcResult.replace(nd, 8, "ĞŞ¸ÄÃÜÂë");
+		srcResult.replace(nd, 8, "ä¿®æ”¹å¯†ç ");
 	}
 	nd = -1;
-	nd = srcResult.find("µ±¿¯×´Ì¬");
+	nd = srcResult.find("å½“åˆŠçŠ¶æ€");
 	if (nd >= 0)
 	{
-		srcResult.replace(nd, 8, "µ±Ç°×´Ì¬");
+		srcResult.replace(nd, 8, "å½“å‰çŠ¶æ€");
 	}
 	return true;
 }
 
 //************************************
-// Method:    ProcessResultAndWriteTxt£º´¦ÀíÊ¶±ğ½á¹û£¬Êä³öµ½¿ØÖÆÌ¨
+// Method:    ProcessResultAndWriteTxtï¼šå¤„ç†è¯†åˆ«ç»“æœï¼Œè¾“å‡ºåˆ°æ§åˆ¶å°
 // FullName:  ProcessResultAndWriteTxt
 // Access:    public 
 // Returns:   void
 // Qualifier:
-// Parameter: string result£ºÊ¶±ğ½á¹û
-// Parameter: string img_path£ºÍ¼Æ¬Â·¾¶
+// Parameter: string resultï¼šè¯†åˆ«ç»“æœ
+// Parameter: string img_pathï¼šå›¾ç‰‡è·¯å¾„
 //************************************
 void ProcessResult(string strSrcResult, string img_path)
 {
@@ -498,35 +498,35 @@ void ProcessResult(string strSrcResult, string img_path)
 
 	bool isQQImg = isQQ(strSrcResult);
 	bool isWeChatImg = isWeChat(strSrcResult);
-	//»ñÈ¡µ±Ç°Í¼Æ¬Ãû
+	//è·å–å½“å‰å›¾ç‰‡å
 	string strImageName = img_path;
 	int nIdx = strImageName.rfind('\\');
-	strImageName = strImageName.substr(nIdx + 1, strImageName.size() - nIdx);	//Í¼Æ¬Ãû³Æ
+	strImageName = strImageName.substr(nIdx + 1, strImageName.size() - nIdx);	//å›¾ç‰‡åç§°
 
 	if (isQQImg)
 	{
-		//µ±Ç°½ØÍ¼ÎªQQ½ØÍ¼
-		string g_str1 = "ÉÌ»§¶©µ¥";		// ÉÌ»§¶©µ¥
-		string g_str2 = "ĞŞ¸ÄÃÜÂë";		// ĞŞ¸ÄÃÜÂë
-		string g_str3 = "½ğ¶î";			// ½ğ¶î
-		string g_str4 = "¶©µ¥½ğ¶î";		// ¶©µ¥½ğ¶î
-		string g_str5 = "ÉÌÆ·";			// ÉÌÆ·
+		//å½“å‰æˆªå›¾ä¸ºQQæˆªå›¾
+		string str1 = "å•†æˆ·è®¢å•";		// å•†æˆ·è®¢å•
+		string str2 = "ä¿®æ”¹å¯†ç ";		// ä¿®æ”¹å¯†ç 
+		string str3 = "é‡‘é¢";			// é‡‘é¢
+		string str4 = "è®¢å•é‡‘é¢";		// è®¢å•é‡‘é¢
+		string str5 = "å•†å“";			// å•†å“
 
-		int nIndex1 = -1;	//Ç°ÏÂ±ê
-		int nIndex2 = -1;	//ºóÏÂ±ê
+		int nIndex1 = -1;	//å‰ä¸‹æ ‡
+		int nIndex2 = -1;	//åä¸‹æ ‡
 
-		//»ñÈ¡½ğ¶î
-		//Í¨¹ı»ñÈ¡½ğ¶îÊıÁ¿Ç°×Ö·û¡°½ğ¶î¡±ºÍºó×Ö·û¡°ÉÌÆ·¡±»ò¡°¶©µ¥½ğ¶î¡±µÄÎ»ÖÃ£¬½ØÈ¡¶şÕßÖĞ¼äµÄ×Ó´®ÔòÊÇ½ğ¶îÊıÁ¿µÄ×Ö·û´®
-		//Èç¹ûÇ°ºóÎ»ÖÃ¶¼Ã»ÓĞÕÒµ½£¬ÔòÈÏÎªÃ»ÓĞÊ¶±ğ³öÀ´£¬·ñÔòÕÒµ½ÆäÖĞÒ»¸öµÄÎ»ÖÃ£¬¾ÍÍ¨¹ıÏòÇ°»òÏòºó£¬À´½ØÈ¡°üº¬½ğ¶îÊıÁ¿µÄ×Ö·û´®
-		//µÃµ½½ğ¶îÊıÁ¿×Ö·û´®ºó£¬È·¶¨×Ö·û'.'Ğ¡ÊıµãµÄÎ»ÖÃ£¬Èç¹ûÃ»ÓĞÕÒµ½'.'£¬ÔòÈÏÎª×Ö·û´®ÊÇ´íµÄ¡£
-		//ÕÒµ½'.'µÄÎ»ÖÃºó£¬ÏòÇ°¶ÁÈ¡ÎªÊı×ÖµÄ×Ö·û£¬Ïòºó¶ÁÈ¡Á½Î»×Ö·û£¬ÔòÊÇ»¨·Ñ½ğ¶îµÄ×Ö·û´®
-		nIndex1 = (int)strSrcResult.find(g_str3);	//¡°½ğ¶î¡±µÄÎ»ÖÃ
-		nIndex2 = (int)strSrcResult.find(g_str4);	//¡°¶©µ¥½ğ¶î¡±µÄÎ»ÖÃ
+		//è·å–é‡‘é¢
+		//é€šè¿‡è·å–é‡‘é¢æ•°é‡å‰å­—ç¬¦â€œé‡‘é¢â€å’Œåå­—ç¬¦â€œå•†å“â€æˆ–â€œè®¢å•é‡‘é¢â€çš„ä½ç½®ï¼Œæˆªå–äºŒè€…ä¸­é—´çš„å­ä¸²åˆ™æ˜¯é‡‘é¢æ•°é‡çš„å­—ç¬¦ä¸²
+		//å¦‚æœå‰åä½ç½®éƒ½æ²¡æœ‰æ‰¾åˆ°ï¼Œåˆ™è®¤ä¸ºæ²¡æœ‰è¯†åˆ«å‡ºæ¥ï¼Œå¦åˆ™æ‰¾åˆ°å…¶ä¸­ä¸€ä¸ªçš„ä½ç½®ï¼Œå°±é€šè¿‡å‘å‰æˆ–å‘åï¼Œæ¥æˆªå–åŒ…å«é‡‘é¢æ•°é‡çš„å­—ç¬¦ä¸²
+		//å¾—åˆ°é‡‘é¢æ•°é‡å­—ç¬¦ä¸²åï¼Œç¡®å®šå­—ç¬¦'.'å°æ•°ç‚¹çš„ä½ç½®ï¼Œå¦‚æœæ²¡æœ‰æ‰¾åˆ°'.'ï¼Œåˆ™è®¤ä¸ºå­—ç¬¦ä¸²æ˜¯é”™çš„ã€‚
+		//æ‰¾åˆ°'.'çš„ä½ç½®åï¼Œå‘å‰è¯»å–ä¸ºæ•°å­—çš„å­—ç¬¦ï¼Œå‘åè¯»å–ä¸¤ä½å­—ç¬¦ï¼Œåˆ™æ˜¯èŠ±è´¹é‡‘é¢çš„å­—ç¬¦ä¸²
+		nIndex1 = (int)strSrcResult.find(str3);	//â€œé‡‘é¢â€çš„ä½ç½®
+		nIndex2 = (int)strSrcResult.find(str4);	//â€œè®¢å•é‡‘é¢â€çš„ä½ç½®
 		if (nIndex2 < 0)
 		{
-			nIndex2 = (int)strSrcResult.find(g_str5); // ¡°ÉÌÆ·¡±µÄÎ»ÖÃ
+			nIndex2 = (int)strSrcResult.find(str5); // â€œå•†å“â€çš„ä½ç½®
 		}
-		string strMoney = "";	//½ğ¶î
+		string strMoney = "";	//é‡‘é¢
 		if (nIndex2 < 0 && nIndex1 < 0)
 		{
 			strMoney = strImageName;
@@ -541,32 +541,32 @@ void ProcessResult(string strSrcResult, string img_path)
 			{
 				nIndex2 = nIndex1 + 14;
 			}
-			string g_strTmp = strSrcResult.substr(nIndex1, nIndex2 - nIndex1);
-			int g_nIdx = g_strTmp.find('.');
-			if (g_nIdx < 0)
+			string strTmp = strSrcResult.substr(nIndex1, nIndex2 - nIndex1);
+			int nIdx = strTmp.find('.');
+			if (nIdx < 0)
 			{
-				nIndex2 = strSrcResult.find("Ôª±¦");
+				nIndex2 = strSrcResult.find("å…ƒå®");
 				if (nIndex2 >= 0)
 				{
-					g_strTmp = strSrcResult.substr(nIndex2 - 12, 12);
+					strTmp = strSrcResult.substr(nIndex2 - 12, 12);
 				}
 			}
-			g_nIdx = g_strTmp.find('.');
-			if (g_nIdx >= 0)
+			nIdx = strTmp.find('.');
+			if (nIdx >= 0)
 			{
-				string g_money = ".";
-				for (int i = g_nIdx-1; i > 0; i--)
+				string money = ".";
+				for (int i = nIdx-1; i > 0; i--)
 				{
-					if (g_strTmp[i] >= '0' && g_strTmp[i] <= '9' && g_money.size() <= 4)
+					if (strTmp[i] >= '0' && strTmp[i] <= '9' && money.size() <= 4)
 					{
-						g_money = g_strTmp[i] + g_money;
+						money = strTmp[i] + money;
 					}
 					else
 					{
 						break;
 					}
 				}
-				strMoney = g_money + g_strTmp.substr(g_nIdx + 1, 2);
+				strMoney = money + strTmp.substr(nIdx + 1, 2);
 			}
 			else
 			{
@@ -575,39 +575,39 @@ void ProcessResult(string strSrcResult, string img_path)
 		}
 		cout << strMoney << endl;
 
-		//»ñÈ¡½»Ò×Ê±¼ä
-		//ÏÈÔÚÈ«ÎÄÖĞÑ°ÕÒ"2018-"»ò"2019-"£¬È»ºó´ÓÕâ¸öÎ»ÖÃ¿ªÊ¼½ØÈ¡22¸ö×Ö·û£¬Í¨¹ıÅĞ¶Ï22¸ö×Ö·ûÖĞÊı×Ö×Ö·ûµÄÊıÁ¿£¨14£©À´È·¶¨½»Ò×Ê±¼ä×îºóÒ»¸ö×Ö·ûµÄÎ»ÖÃ
-		//È»ºó½ØÈ¡Õâ¶Î×Ö·û£¬²¢ÔÚµÚÊ®¸ö×Ö·ûºó±ß¼ÓÉÏÒ»¸ö¿Õ¸ñ
-		//Èç¹ûÃ»ÓĞÕÒµ½"2018-"»ò"2019-"»òÕß¼ì²éµ½½ØÈ¡µÄ22¸ö×Ö·ûÖĞÊı×Ö×Ö·ûÉÙÓÚ14¸ö£¬ÔòÈÏÎª×Ö·û´®Ê¶±ğ´íÎó
-		int g_n1 = (int)strSrcResult.find("2018-");
-		int g_n2 = (int)strSrcResult.find("2019-");
-		nIndex1 = (g_n1 >= g_n2) ? g_n1 : g_n2;
-		string strTime = "";	//½»Ò×Ê±¼ä
+		//è·å–äº¤æ˜“æ—¶é—´
+		//å…ˆåœ¨å…¨æ–‡ä¸­å¯»æ‰¾"2018-"æˆ–"2019-"ï¼Œç„¶åä»è¿™ä¸ªä½ç½®å¼€å§‹æˆªå–22ä¸ªå­—ç¬¦ï¼Œé€šè¿‡åˆ¤æ–­22ä¸ªå­—ç¬¦ä¸­æ•°å­—å­—ç¬¦çš„æ•°é‡ï¼ˆ14ï¼‰æ¥ç¡®å®šäº¤æ˜“æ—¶é—´æœ€åä¸€ä¸ªå­—ç¬¦çš„ä½ç½®
+		//ç„¶åæˆªå–è¿™æ®µå­—ç¬¦ï¼Œå¹¶åœ¨ç¬¬åä¸ªå­—ç¬¦åè¾¹åŠ ä¸Šä¸€ä¸ªç©ºæ ¼
+		//å¦‚æœæ²¡æœ‰æ‰¾åˆ°"2018-"æˆ–"2019-"æˆ–è€…æ£€æŸ¥åˆ°æˆªå–çš„22ä¸ªå­—ç¬¦ä¸­æ•°å­—å­—ç¬¦å°‘äº14ä¸ªï¼Œåˆ™è®¤ä¸ºå­—ç¬¦ä¸²è¯†åˆ«é”™è¯¯
+		int n1 = (int)strSrcResult.find("2018-");
+		int n2 = (int)strSrcResult.find("2019-");
+		nIndex1 = (n1 >= n2) ? n1 : n2;
+		string strTime = "";	//äº¤æ˜“æ—¶é—´
 		if (nIndex1 >= 0)
 		{
-			string g_strTmp = strSrcResult.substr(nIndex1, 22);
-			int g_nIdx = 0;
-			int g_num = 0;
-			for (int i = 0; i < g_strTmp.size(); i++)
+			string strTmp = strSrcResult.substr(nIndex1, 22);
+			int nIdx = 0;
+			int num = 0;
+			for (int i = 0; i < strTmp.size(); i++)
 			{
-				g_nIdx = i;
-				if (g_num == 14)
+				nIdx = i;
+				if (num == 14)
 				{
 					break;
 				}
-				if (g_strTmp[i] >= '0' && g_strTmp[i] <= '9')
+				if (strTmp[i] >= '0' && strTmp[i] <= '9')
 				{
-					g_num++;
+					num++;
 				}
 				
 			}
 
-			if (g_num >= 14)
+			if (num >= 14)
 			{
-				g_strTmp = g_strTmp.substr(0, g_nIdx);
-				strTime = g_strTmp.substr(0, 10);
+				strTmp = strTmp.substr(0, nIdx);
+				strTime = strTmp.substr(0, 10);
 				strTime += ' ';
-				strTime += g_strTmp.substr(10, g_nIdx - 10);
+				strTime += strTmp.substr(10, nIdx - 10);
 			}
 			else
 			{
@@ -620,32 +620,32 @@ void ProcessResult(string strSrcResult, string img_path)
 		}
 		cout << strTime << endl;
 
-		//»ñÈ¡½»Ò×¶©µ¥
-		//½»Ò×¶©µ¥ºÅÒÔ"10000"¿ªÍ·£¬ÔòÏÈÈ·¶¨"10000"µÄÎ»ÖÃ£¬È»ºóÈ·¶¨×Ö·û´®"ÉÌ»§¶©µ¥"µÄÎ»ÖÃ£¬"ÉÌ»§¶©µ¥"ÔÚ½»Ò×¶©µ¥ºÅµÄºóÃæ
-		//Èç¹ûÃ»ÓĞÕÒµ½"ÉÌ»§¶©µ¥",Ôò´Ó"10000"½ØÈ¡34¸ö×Ö·û£¨³¬¹ıÁË½»Ò×¶©µ¥ºÅµÄ³¤¶È£©£¬²¢¸ö×Ö·ûÅĞ¶ÏÊÇ²»ÊÇÊı×Ö×Ö·û£¬Èç¹ûÓöµ½²»ÊÇÊı×Ö×Ö·ûµÄ£¬ÈÏÎªÕÒµ½½áÎ²ÁË
-		//Èç¹ûÕÒµ½"ÉÌ»§¶©µ¥"£¬Ôò´Ó"10000"¿ªÊ¼µ½"ÉÌ»§¶©µ¥"µÄ×Ö·û´®Îª½»Ò×¶©µ¥ºÅ¡£
-		//Èç¹ûÃ»ÓĞÕÒµ½"10000"£¬ÔòÈÏÎªÃ»ÓĞÊ¶±ğµ½½»Ò×¶©µ¥
+		//è·å–äº¤æ˜“è®¢å•
+		//äº¤æ˜“è®¢å•å·ä»¥"10000"å¼€å¤´ï¼Œåˆ™å…ˆç¡®å®š"10000"çš„ä½ç½®ï¼Œç„¶åç¡®å®šå­—ç¬¦ä¸²"å•†æˆ·è®¢å•"çš„ä½ç½®ï¼Œ"å•†æˆ·è®¢å•"åœ¨äº¤æ˜“è®¢å•å·çš„åé¢
+		//å¦‚æœæ²¡æœ‰æ‰¾åˆ°"å•†æˆ·è®¢å•",åˆ™ä»"10000"æˆªå–34ä¸ªå­—ç¬¦ï¼ˆè¶…è¿‡äº†äº¤æ˜“è®¢å•å·çš„é•¿åº¦ï¼‰ï¼Œå¹¶ä¸ªå­—ç¬¦åˆ¤æ–­æ˜¯ä¸æ˜¯æ•°å­—å­—ç¬¦ï¼Œå¦‚æœé‡åˆ°ä¸æ˜¯æ•°å­—å­—ç¬¦çš„ï¼Œè®¤ä¸ºæ‰¾åˆ°ç»“å°¾äº†
+		//å¦‚æœæ‰¾åˆ°"å•†æˆ·è®¢å•"ï¼Œåˆ™ä»"10000"å¼€å§‹åˆ°"å•†æˆ·è®¢å•"çš„å­—ç¬¦ä¸²ä¸ºäº¤æ˜“è®¢å•å·ã€‚
+		//å¦‚æœæ²¡æœ‰æ‰¾åˆ°"10000"ï¼Œåˆ™è®¤ä¸ºæ²¡æœ‰è¯†åˆ«åˆ°äº¤æ˜“è®¢å•
 		nIndex1 = (int)strSrcResult.find("10000");
-		nIndex2 = (int)strSrcResult.find(g_str1);
-		string strTransactionOrder = "";	//½»Ò×¶©µ¥
+		nIndex2 = (int)strSrcResult.find(str1);
+		string strTransactionOrder = "";	//äº¤æ˜“è®¢å•
 		if (nIndex1 >= 0)
 		{
 			if (nIndex2 < 0 || nIndex2 < nIndex1)
 			{
 				strTransactionOrder = strSrcResult.substr(nIndex1, 34);
-				string g_strTmp = "";
+				string strTmp = "";
 				for (int i = 0; i < strTransactionOrder.size(); i++)
 				{
 					if (strTransactionOrder[i] >= '0' && strTransactionOrder[i] <= '9')
 					{
-						g_strTmp += strTransactionOrder[i];
+						strTmp += strTransactionOrder[i];
 					}
 					else
 					{
 						break;
 					}
 				}
-				strTransactionOrder = g_strTmp;
+				strTransactionOrder = strTmp;
 			}
 			else
 			{
@@ -658,31 +658,31 @@ void ProcessResult(string strSrcResult, string img_path)
 		}
 		cout << strTransactionOrder << endl;
 
-		//»ñÈ¡ÉÌ»§¶©µ¥
-		//ÉÌ»§¶©µ¥ºÅÒÔ"qqpro_"¿ªÍ·£¬ËùÒÔÏÈ¼ì²éÓĞÃ»ÓĞ"qqpro_"£¬È»ºó¼ì²éÓĞÃ»ÓĞ"ĞŞ¸ÄÃÜÂë"£¨´ó²¿·ÖÉÌ»§¶©µ¥ºÅºó±ß¶¼ÊÇ"ĞŞ¸ÄÃÜÂë")
-		//Èç¹û"qqpro_"Ã»ÓĞÕÒµ½£¬ÈÏÎªÃ»ÓĞÊ¶±ğµ½ÉÌ»§¶©µ¥
-		//½ØÈ¡"qqpro_"µ½"ĞŞ¸ÄÃÜÂë"ÖĞ¼äµÄ×Ö·û£¬Èç¹ûÃ»ÓĞÕÒµ½"ĞŞ¸ÄÃÜÂë",Ôò´Ó"qqpro_"½ØÈ¡µ½×Ö·û´®½áÎ²£¬
-		//È»ºó¶Ô½ØÈ¡µÄ×Ö·û´®Öğ¸ö×Ö·ûÅĞ¶ÏÊÇ²»ÊÇÊı×Ö×Ö·û£¬Óöµ½²»ÊÇÊı×Ö×Ö·ûµÄµØ·½½áÊø£¬±ãÌáÈ¡³öÁËÉÌ»§¶©µ¥
+		//è·å–å•†æˆ·è®¢å•
+		//å•†æˆ·è®¢å•å·ä»¥"qqpro_"å¼€å¤´ï¼Œæ‰€ä»¥å…ˆæ£€æŸ¥æœ‰æ²¡æœ‰"qqpro_"ï¼Œç„¶åæ£€æŸ¥æœ‰æ²¡æœ‰"ä¿®æ”¹å¯†ç "ï¼ˆå¤§éƒ¨åˆ†å•†æˆ·è®¢å•å·åè¾¹éƒ½æ˜¯"ä¿®æ”¹å¯†ç ")
+		//å¦‚æœ"qqpro_"æ²¡æœ‰æ‰¾åˆ°ï¼Œè®¤ä¸ºæ²¡æœ‰è¯†åˆ«åˆ°å•†æˆ·è®¢å•
+		//æˆªå–"qqpro_"åˆ°"ä¿®æ”¹å¯†ç "ä¸­é—´çš„å­—ç¬¦ï¼Œå¦‚æœæ²¡æœ‰æ‰¾åˆ°"ä¿®æ”¹å¯†ç ",åˆ™ä»"qqpro_"æˆªå–åˆ°å­—ç¬¦ä¸²ç»“å°¾ï¼Œ
+		//ç„¶åå¯¹æˆªå–çš„å­—ç¬¦ä¸²é€ä¸ªå­—ç¬¦åˆ¤æ–­æ˜¯ä¸æ˜¯æ•°å­—å­—ç¬¦ï¼Œé‡åˆ°ä¸æ˜¯æ•°å­—å­—ç¬¦çš„åœ°æ–¹ç»“æŸï¼Œä¾¿æå–å‡ºäº†å•†æˆ·è®¢å•
 		nIndex1 = (int)strSrcResult.find("qqpro_");
-		nIndex2 = (int)strSrcResult.find(g_str2);
-		string strMerchantOrder = "";	//ÉÌ»§µ¥ºÅ
+		nIndex2 = (int)strSrcResult.find(str2);
+		string strMerchantOrder = "";	//å•†æˆ·å•å·
 		if (nIndex1 >= 0)
 		{
-			//¿¨×¡µ¥ºÅµÄ½áÎ²£¬·ÀÖ¹³öÏÖµ¥ºÅºó±ßÎŞÄÚÈİµÄÇé¿ö
+			//å¡ä½å•å·çš„ç»“å°¾ï¼Œé˜²æ­¢å‡ºç°å•å·åè¾¹æ— å†…å®¹çš„æƒ…å†µ
 			if (nIndex2 < 0 || nIndex2 < nIndex1)
 			{
 				nIndex2 = strSrcResult.size();
 			}
 			strMerchantOrder = strSrcResult.substr(nIndex1, (nIndex2 - nIndex1));
-			string g_temp = "";
+			string temp = "";
 			for (int i = 0; i < strMerchantOrder.size(); i++)
 			{
 				if (strMerchantOrder[i] >= '0' && strMerchantOrder[i] <= '9')
 				{
-					g_temp += strMerchantOrder[i];
+					temp += strMerchantOrder[i];
 				}
 			}
-			strMerchantOrder = "qqpro_" + g_temp;
+			strMerchantOrder = "qqpro_" + temp;
 		}
 		else
 		{
@@ -692,22 +692,22 @@ void ProcessResult(string strSrcResult, string img_path)
 	}
 	else if (isWeChatImg)
 	{
-		//½ØÍ¼ÎªÎ¢ĞÅÍ¼Æ¬
-		string g_str1 = "ÉÌ»§µ¥ºÅ";	// ÉÌ»§µ¥ºÅ
-		string g_str2 = "ÔÚ´ËÉÌ»§";	// ÔÚ´ËÉÌ»§
-		string g_str3 = "³äÖµ·şÎñ";
-		string g_str4 = "µ±Ç°×´Ì¬";
+		//æˆªå›¾ä¸ºå¾®ä¿¡å›¾ç‰‡
+		string str1 = "å•†æˆ·å•å·";	// å•†æˆ·å•å·
+		string str2 = "åœ¨æ­¤å•†æˆ·";	// åœ¨æ­¤å•†æˆ·
+		string str3 = "å……å€¼æœåŠ¡";
+		string str4 = "å½“å‰çŠ¶æ€";
 
 		int nIndex1 = -1;
 		int nIndex2 = -1;
-		//µÃµ½¶©µ¥½ğ¶î
-		//Í¨¹ı»ñÈ¡½ğ¶îÊıÁ¿Ç°×Ö·û"³äÖµ·şÎñ"ºÍºó×Ö·û"µ±Ç°×´Ì¬"µÄÎ»ÖÃ£¬½ØÈ¡¶şÕßÖĞ¼äµÄ×Ó´®ÔòÊÇ½ğ¶îÊıÁ¿µÄ×Ö·û´®
-		//Èç¹ûÇ°ºóÎ»ÖÃ¶¼Ã»ÓĞÕÒµ½£¬ÔòÈÏÎªÃ»ÓĞÊ¶±ğ³öÀ´£¬·ñÔòÕÒµ½ÆäÖĞÒ»¸öµÄÎ»ÖÃ£¬¾ÍÍ¨¹ıÏòÇ°»òÏòºó£¬À´½ØÈ¡°üº¬½ğ¶îÊıÁ¿µÄ×Ö·û´®
-		//µÃµ½½ğ¶îÊıÁ¿×Ö·û´®ºó£¬È·¶¨×Ö·û'.'Ğ¡ÊıµãºÍ×Ö·û'-'¸ººÅµÄÎ»ÖÃ
-		//½ØÈ¡'-'ºÅºÍ'.'Ö®¼äµÄ×Ö·ûºÍ'.'ºó±ßÁ½¸ö×Ö·ûÔòÊÇ¶©µ¥½ğ¶î
-		nIndex1 = strSrcResult.find(g_str3);
-		nIndex2 = strSrcResult.find(g_str4);
-		string strMoney = "";  //½ğ¶î
+		//å¾—åˆ°è®¢å•é‡‘é¢
+		//é€šè¿‡è·å–é‡‘é¢æ•°é‡å‰å­—ç¬¦"å……å€¼æœåŠ¡"å’Œåå­—ç¬¦"å½“å‰çŠ¶æ€"çš„ä½ç½®ï¼Œæˆªå–äºŒè€…ä¸­é—´çš„å­ä¸²åˆ™æ˜¯é‡‘é¢æ•°é‡çš„å­—ç¬¦ä¸²
+		//å¦‚æœå‰åä½ç½®éƒ½æ²¡æœ‰æ‰¾åˆ°ï¼Œåˆ™è®¤ä¸ºæ²¡æœ‰è¯†åˆ«å‡ºæ¥ï¼Œå¦åˆ™æ‰¾åˆ°å…¶ä¸­ä¸€ä¸ªçš„ä½ç½®ï¼Œå°±é€šè¿‡å‘å‰æˆ–å‘åï¼Œæ¥æˆªå–åŒ…å«é‡‘é¢æ•°é‡çš„å­—ç¬¦ä¸²
+		//å¾—åˆ°é‡‘é¢æ•°é‡å­—ç¬¦ä¸²åï¼Œç¡®å®šå­—ç¬¦'.'å°æ•°ç‚¹å’Œå­—ç¬¦'-'è´Ÿå·çš„ä½ç½®
+		//æˆªå–'-'å·å’Œ'.'ä¹‹é—´çš„å­—ç¬¦å’Œ'.'åè¾¹ä¸¤ä¸ªå­—ç¬¦åˆ™æ˜¯è®¢å•é‡‘é¢
+		nIndex1 = strSrcResult.find(str3);
+		nIndex2 = strSrcResult.find(str4);
+		string strMoney = "";  //é‡‘é¢
 		if (nIndex1 < 0 && nIndex2 < 0)
 		{
 			strMoney = strImageName;
@@ -722,12 +722,12 @@ void ProcessResult(string strSrcResult, string img_path)
 			{
 				nIndex2 = nIndex1 + 18;
 			}
-			string g_strTmp = strSrcResult.substr(nIndex1, nIndex2 - nIndex1);
-			int nIdx1 = g_strTmp.find('-');
-			int nIdx2 = g_strTmp.find('.');
+			string strTmp = strSrcResult.substr(nIndex1, nIndex2 - nIndex1);
+			int nIdx1 = strTmp.find('-');
+			int nIdx2 = strTmp.find('.');
 			if (nIdx1 >= 0 && nIdx2 >= 0)
 			{
-				strMoney = g_strTmp.substr(nIdx1 + 1, nIdx2 - nIdx1 - 1);
+				strMoney = strTmp.substr(nIdx1 + 1, nIdx2 - nIdx1 - 1);
 				for (int i = 0; i < strMoney.size(); i++)
 				{
 					if (strMoney[i] < '0' || strMoney[i] > '9')
@@ -735,7 +735,7 @@ void ProcessResult(string strSrcResult, string img_path)
 						strMoney.erase(i, 1);
 					}
 				}
-				strMoney += g_strTmp.substr(nIdx2, 3);
+				strMoney += strTmp.substr(nIdx2, 3);
 			}
 			else
 			{
@@ -744,37 +744,37 @@ void ProcessResult(string strSrcResult, string img_path)
 		}
 		cout << strMoney << endl;
 
-		//µÃµ½Ö§¸¶Ê±¼ä
-		//ÏÈÔÚÈ«ÎÄÖĞÑ°ÕÒ"2018-"»ò"2019-"£¬È»ºó´ÓÕâ¸öÎ»ÖÃ¿ªÊ¼½ØÈ¡22¸ö×Ö·û£¬Í¨¹ıÅĞ¶Ï22¸ö×Ö·ûÖĞÊı×Ö×Ö·ûµÄÊıÁ¿£¨14£©À´È·¶¨½»Ò×Ê±¼ä×îºóÒ»¸ö×Ö·ûµÄÎ»ÖÃ
-		//È»ºó½ØÈ¡Õâ¶Î×Ö·û£¬²¢ÔÚµÚÊ®¸ö×Ö·ûºó±ß¼ÓÉÏÒ»¸ö¿Õ¸ñ
-		//Èç¹ûÃ»ÓĞÕÒµ½"2018-"»ò"2019-"»òÕß¼ì²éµ½½ØÈ¡µÄ22¸ö×Ö·ûÖĞÊı×Ö×Ö·ûÉÙÓÚ14¸ö£¬ÔòÈÏÎª×Ö·û´®Ê¶±ğ´íÎó
-		int g_n1 = (int)strSrcResult.find("2018-");
-		int g_n2 = (int)strSrcResult.find("2019-");
-		nIndex1 = g_n1 > g_n2 ? g_n1 : g_n2;
-		string strTime = "";	//Ö§¸¶Ê±¼ä
+		//å¾—åˆ°æ”¯ä»˜æ—¶é—´
+		//å…ˆåœ¨å…¨æ–‡ä¸­å¯»æ‰¾"2018-"æˆ–"2019-"ï¼Œç„¶åä»è¿™ä¸ªä½ç½®å¼€å§‹æˆªå–22ä¸ªå­—ç¬¦ï¼Œé€šè¿‡åˆ¤æ–­22ä¸ªå­—ç¬¦ä¸­æ•°å­—å­—ç¬¦çš„æ•°é‡ï¼ˆ14ï¼‰æ¥ç¡®å®šäº¤æ˜“æ—¶é—´æœ€åä¸€ä¸ªå­—ç¬¦çš„ä½ç½®
+		//ç„¶åæˆªå–è¿™æ®µå­—ç¬¦ï¼Œå¹¶åœ¨ç¬¬åä¸ªå­—ç¬¦åè¾¹åŠ ä¸Šä¸€ä¸ªç©ºæ ¼
+		//å¦‚æœæ²¡æœ‰æ‰¾åˆ°"2018-"æˆ–"2019-"æˆ–è€…æ£€æŸ¥åˆ°æˆªå–çš„22ä¸ªå­—ç¬¦ä¸­æ•°å­—å­—ç¬¦å°‘äº14ä¸ªï¼Œåˆ™è®¤ä¸ºå­—ç¬¦ä¸²è¯†åˆ«é”™è¯¯
+		int n1 = (int)strSrcResult.find("2018-");
+		int n2 = (int)strSrcResult.find("2019-");
+		nIndex1 = n1 > n2 ? n1 : n2;
+		string strTime = "";	//æ”¯ä»˜æ—¶é—´
 		if (nIndex1 >= 0)
 		{
-			string g_strTmp = strSrcResult.substr(nIndex1, 22);
-			int g_nIdx = 0;
-			int g_num = 0;
-			for (int i = 0; i < g_strTmp.size(); i++)
+			string strTmp = strSrcResult.substr(nIndex1, 22);
+			int nIdx = 0;
+			int num = 0;
+			for (int i = 0; i < strTmp.size(); i++)
 			{
-				g_nIdx = i;
-				if (g_num == 14)
+				nIdx = i;
+				if (num == 14)
 				{
 					break;
 				}
-				if (g_strTmp[i] >= '0' && g_strTmp[i] <= '9')
+				if (strTmp[i] >= '0' && strTmp[i] <= '9')
 				{
-					g_num++;
+					num++;
 				}
 			}
-			if (g_num >= 14)
+			if (num >= 14)
 			{
-				g_strTmp = g_strTmp.substr(0, g_nIdx);
-				strTime = g_strTmp.substr(0, 10);
+				strTmp = strTmp.substr(0, nIdx);
+				strTime = strTmp.substr(0, 10);
 				strTime += ' ';
-				strTime += g_strTmp.substr(10, g_nIdx - 10);
+				strTime += strTmp.substr(10, nIdx - 10);
 			}
 			else
 			{
@@ -788,14 +788,14 @@ void ProcessResult(string strSrcResult, string img_path)
 		}
 		cout << strTime << endl;
 
-		//µÃµ½½»Ò×µ¥ºÅ
-		//½»Ò×µ¥ºÅÒÔ"42000"¿ªÍ·£¬ÔòÏÈÈ·¶¨"42000"µÄÎ»ÖÃ£¬È»ºóÈ·¶¨×Ö·û´®"ÉÌ»§µ¥ºÅ"µÄÎ»ÖÃ£¬"ÉÌ»§µ¥ºÅ"ÔÚ½»Ò×µ¥ºÅµÄºóÃæ
-		//Èç¹ûÕÒµ½"ÉÌ»§µ¥ºÅ"£¬Ôò´Ó"42000"¿ªÊ¼µ½"ÉÌ»§µ¥ºÅ"µÄ×Ö·û´®Îª½»Ò×¶©µ¥ºÅ¡£
-		//Èç¹ûÃ»ÓĞÕÒµ½"ÉÌ»§µ¥ºÅ",Ôò´Ó"42000"½ØÈ¡30¸ö×Ö·û£¨³¬¹ıÁË½»Ò×µ¥ºÅµÄ³¤¶È£©£¬²¢¸ö×Ö·ûÅĞ¶ÏÊÇ²»ÊÇÊı×Ö×Ö·û£¬Èç¹ûÓöµ½²»ÊÇÊı×Ö×Ö·ûµÄ£¬ÈÏÎªÕÒµ½½áÎ²ÁË
-		//Èç¹ûÃ»ÓĞÕÒµ½"42000"£¬ÔòÈÏÎªÃ»ÓĞÊ¶±ğµ½½»Ò×µ¥ºÅ
+		//å¾—åˆ°äº¤æ˜“å•å·
+		//äº¤æ˜“å•å·ä»¥"42000"å¼€å¤´ï¼Œåˆ™å…ˆç¡®å®š"42000"çš„ä½ç½®ï¼Œç„¶åç¡®å®šå­—ç¬¦ä¸²"å•†æˆ·å•å·"çš„ä½ç½®ï¼Œ"å•†æˆ·å•å·"åœ¨äº¤æ˜“å•å·çš„åé¢
+		//å¦‚æœæ‰¾åˆ°"å•†æˆ·å•å·"ï¼Œåˆ™ä»"42000"å¼€å§‹åˆ°"å•†æˆ·å•å·"çš„å­—ç¬¦ä¸²ä¸ºäº¤æ˜“è®¢å•å·ã€‚
+		//å¦‚æœæ²¡æœ‰æ‰¾åˆ°"å•†æˆ·å•å·",åˆ™ä»"42000"æˆªå–30ä¸ªå­—ç¬¦ï¼ˆè¶…è¿‡äº†äº¤æ˜“å•å·çš„é•¿åº¦ï¼‰ï¼Œå¹¶ä¸ªå­—ç¬¦åˆ¤æ–­æ˜¯ä¸æ˜¯æ•°å­—å­—ç¬¦ï¼Œå¦‚æœé‡åˆ°ä¸æ˜¯æ•°å­—å­—ç¬¦çš„ï¼Œè®¤ä¸ºæ‰¾åˆ°ç»“å°¾äº†
+		//å¦‚æœæ²¡æœ‰æ‰¾åˆ°"42000"ï¼Œåˆ™è®¤ä¸ºæ²¡æœ‰è¯†åˆ«åˆ°äº¤æ˜“å•å·
 		nIndex1 = (int)strSrcResult.find("42000");
-		nIndex2 = (int)strSrcResult.find(g_str1);
-		string strTransactionNumber = "";	//½»Ò×µ¥ºÅ
+		nIndex2 = (int)strSrcResult.find(str1);
+		string strTransactionNumber = "";	//äº¤æ˜“å•å·
 		if (nIndex1 >= 0)
 		{
 			if (nIndex2 >= 0)
@@ -805,19 +805,19 @@ void ProcessResult(string strSrcResult, string img_path)
 			else
 			{
 				strTransactionNumber = strSrcResult.substr(nIndex1, 30);
-				string g_strTmp = "";
+				string strTmp = "";
 				for (int i = 0; i < strTransactionNumber.size(); i++)
 				{
 					if (strTransactionNumber[i] >= '0' && strTransactionNumber[i] <= '9')
 					{
-						g_strTmp += strTransactionNumber[i];
+						strTmp += strTransactionNumber[i];
 					}
 					else
 					{
 						break;
 					}
 				}
-				strTransactionNumber = g_strTmp;
+				strTransactionNumber = strTmp;
 			}
 		}
 		else
@@ -826,14 +826,14 @@ void ProcessResult(string strSrcResult, string img_path)
 		}
 		cout << strTransactionNumber << endl;
 
-		//µÃµ½ÉÌ»§µ¥ºÅ
-		//ÉÌ»§µ¥ºÅÒÔ"product_"¿ªÍ·£¬ËùÒÔÏÈ¼ì²éÓĞÃ»ÓĞ"product_"£¬È»ºó¼ì²éÓĞÃ»ÓĞ"ÔÚ´ËÉÌ»§"£¨´ó²¿·ÖÉÌ»§µ¥ºÅºó±ß¶¼ÊÇ"ÔÚ´ËÉÌ»§")
-		//Èç¹û"product_"Ã»ÓĞÕÒµ½£¬ÈÏÎªÃ»ÓĞÊ¶±ğµ½ÉÌ»§µ¥ºÅ
-		//½ØÈ¡"product_"µ½"ÔÚ´ËÉÌ»§"ÖĞ¼äµÄ×Ö·û£¬Èç¹ûÃ»ÓĞÕÒµ½"ÔÚ´ËÉÌ»§",Ôò´Ó"qqpro_"½ØÈ¡µ½×Ö·û´®½áÎ²£¬
-		//È»ºó¶Ô½ØÈ¡µÄ×Ö·û´®Öğ¸ö×Ö·ûÅĞ¶ÏÊÇ²»ÊÇÊı×Ö×Ö·û£¬Óöµ½²»ÊÇÊı×Ö×Ö·ûµÄµØ·½½áÊø£¬±ãÌáÈ¡³öÁËÉÌ»§¶©µ¥
+		//å¾—åˆ°å•†æˆ·å•å·
+		//å•†æˆ·å•å·ä»¥"product_"å¼€å¤´ï¼Œæ‰€ä»¥å…ˆæ£€æŸ¥æœ‰æ²¡æœ‰"product_"ï¼Œç„¶åæ£€æŸ¥æœ‰æ²¡æœ‰"åœ¨æ­¤å•†æˆ·"ï¼ˆå¤§éƒ¨åˆ†å•†æˆ·å•å·åè¾¹éƒ½æ˜¯"åœ¨æ­¤å•†æˆ·")
+		//å¦‚æœ"product_"æ²¡æœ‰æ‰¾åˆ°ï¼Œè®¤ä¸ºæ²¡æœ‰è¯†åˆ«åˆ°å•†æˆ·å•å·
+		//æˆªå–"product_"åˆ°"åœ¨æ­¤å•†æˆ·"ä¸­é—´çš„å­—ç¬¦ï¼Œå¦‚æœæ²¡æœ‰æ‰¾åˆ°"åœ¨æ­¤å•†æˆ·",åˆ™ä»"qqpro_"æˆªå–åˆ°å­—ç¬¦ä¸²ç»“å°¾ï¼Œ
+		//ç„¶åå¯¹æˆªå–çš„å­—ç¬¦ä¸²é€ä¸ªå­—ç¬¦åˆ¤æ–­æ˜¯ä¸æ˜¯æ•°å­—å­—ç¬¦ï¼Œé‡åˆ°ä¸æ˜¯æ•°å­—å­—ç¬¦çš„åœ°æ–¹ç»“æŸï¼Œä¾¿æå–å‡ºäº†å•†æˆ·è®¢å•
 		nIndex1 = (int)strSrcResult.find("product_");
-		nIndex2 = (int)strSrcResult.find(g_str2);
-		string strMerchantNumber  = "";		//ÉÌ»§µ¥ºÅ
+		nIndex2 = (int)strSrcResult.find(str2);
+		string strMerchantNumber  = "";		//å•†æˆ·å•å·
 		if (nIndex1 >= 0)
 		{
 			if (nIndex2 < 0)
@@ -841,15 +841,15 @@ void ProcessResult(string strSrcResult, string img_path)
 				nIndex2 = strSrcResult.size();
 			}
 			strMerchantNumber = strSrcResult.substr(nIndex1, (nIndex2 - nIndex1));
-			string g_strTmp = "";
+			string strTmp = "";
 			for (int i = 0; i < strMerchantNumber.size(); i++)
 			{
 				if (strMerchantNumber[i] >= '0' && strMerchantNumber[i] <= '9')
 				{
-					g_strTmp += strMerchantNumber[i];
+					strTmp += strMerchantNumber[i];
 				}
 			}
-			strMerchantNumber = "product_" + g_strTmp;
+			strMerchantNumber = "product_" + strTmp;
 		}
 		else
 		{
@@ -859,7 +859,7 @@ void ProcessResult(string strSrcResult, string img_path)
 	}
 	else
 	{
-		//Ã»ÓĞ±æÈÏ³öÊÇÎ¢ĞÅ»¹ÊÇqqÍ¼Æ¬
+		//æ²¡æœ‰è¾¨è®¤å‡ºæ˜¯å¾®ä¿¡è¿˜æ˜¯qqå›¾ç‰‡
 		cout << strImageName << endl;
 		cout << strImageName << endl;
 		cout << strImageName << endl;
@@ -872,7 +872,7 @@ int main(int argc, char* argv[])
 {
 	if (argc < 2)
 	{
-		//cout << "Çë°´exeÂ·¾¶£¬Í¼Æ¬Â·¾¶¸ñÊ½ÊäÈë²ÎÊı¡£" << endl;
+		//cout << "è¯·æŒ‰exeè·¯å¾„ï¼Œå›¾ç‰‡è·¯å¾„æ ¼å¼è¾“å…¥å‚æ•°ã€‚" << endl;
 		return 1;
 	}
 	//string qq = argv[1];
@@ -882,16 +882,16 @@ int main(int argc, char* argv[])
 	Mat inputImg = imread(img_path);
 	if (inputImg.empty())
 	{
-		//cout << "Í¼Æ¬²»´æÔÚ£¡£¡" << endl;
+		//cout << "å›¾ç‰‡ä¸å­˜åœ¨ï¼ï¼" << endl;
 		return 1;
 	}
 	if (inputImg.rows < inputImg.cols)
 	{
-		//cout << "´íÎó" << endl;
+		//cout << "é”™è¯¯" << endl;
 		return 1;
 	}
 
-	//½«Í¼Æ¬ÖĞÈı¸öÍ¨µÀµÄÖµ¶¼µÍÓÚ150µÄµØ·½£¬Í»³öÎª0µÄºÚÉ«
+	//å°†å›¾ç‰‡ä¸­ä¸‰ä¸ªé€šé“çš„å€¼éƒ½ä½äº150çš„åœ°æ–¹ï¼Œçªå‡ºä¸º0çš„é»‘è‰²
 	for (int row = 0; row < inputImg.rows; row++)
 	{
 		for (int col = 0; col < inputImg.cols; col++)
@@ -903,7 +903,7 @@ int main(int argc, char* argv[])
 		}
 	}	
 
-// 	imshow("ÔöÇ¿", inputImg);
+// 	imshow("å¢å¼º", inputImg);
 // 	waitKey(0);
 
 	int nLeft = 0;
@@ -922,7 +922,7 @@ int main(int argc, char* argv[])
 	string srcResult = pText;
 	
 
-	//¼ì²éÊÇ·ñÓĞ´í
+	//æ£€æŸ¥æ˜¯å¦æœ‰é”™
 	bool bChe = checkError(srcResult);
 	if (!bChe)
 	{
@@ -933,6 +933,6 @@ int main(int argc, char* argv[])
 	ProcessResult(srcResult, img_path);
 
 	//cout << srcResult << endl;
-	//16.png¡¢
+	//16.pngã€
 	return 0;
 }

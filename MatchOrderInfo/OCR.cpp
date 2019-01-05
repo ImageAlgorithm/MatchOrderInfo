@@ -1,5 +1,5 @@
-/********************************************************************************
-* ÓÃÓÚÊ¶±ðÎÄ×ÖÄÚÈÝµÄÎÄ¼þ£¬ÊµÏÖÁËOCR.hÖÐÉùÃ÷µÄº¯Êý
+ï»¿/********************************************************************************
+* ç”¨äºŽè¯†åˆ«æ–‡å­—å†…å®¹çš„æ–‡ä»¶ï¼Œå®žçŽ°äº†OCR.hä¸­å£°æ˜Žçš„å‡½æ•°
 ********************************************************************************/
 
 #include "OCR.h"
@@ -7,20 +7,20 @@
 wchar_t* OCR::Utf_8ToUnicode(char* szU8)
 {
 	//UTF8 to Unicode  
-	//ÓÉÓÚÖÐÎÄÖ±½Ó¸´ÖÆ¹ýÀ´»á³ÉÂÒÂë£¬±àÒëÆ÷ÓÐÊ±»á±¨´í£¬¹Ê²ÉÓÃ16½øÖÆÐÎÊ½  
+	//ç”±äºŽä¸­æ–‡ç›´æŽ¥å¤åˆ¶è¿‡æ¥ä¼šæˆä¹±ç ï¼Œç¼–è¯‘å™¨æœ‰æ—¶ä¼šæŠ¥é”™ï¼Œæ•…é‡‡ç”¨16è¿›åˆ¶å½¢å¼  
 
-	//Ô¤×ª»»£¬µÃµ½ËùÐè¿Õ¼äµÄ´óÐ¡  
+	//é¢„è½¬æ¢ï¼Œå¾—åˆ°æ‰€éœ€ç©ºé—´çš„å¤§å°  
 	size_t wcsLen = ::MultiByteToWideChar(CP_UTF8, NULL, szU8, strlen(szU8), NULL, 0);
-	//·ÖÅä¿Õ¼äÒª¸ø'\0'Áô¸ö¿Õ¼ä£¬MultiByteToWideChar²»»á¸ø'\0'¿Õ¼ä  
+	//åˆ†é…ç©ºé—´è¦ç»™'\0'ç•™ä¸ªç©ºé—´ï¼ŒMultiByteToWideCharä¸ä¼šç»™'\0'ç©ºé—´  
 	wchar_t *wszString = new wchar_t[wcsLen + 1];
-	//×ª»»  
+	//è½¬æ¢  
 	::MultiByteToWideChar(CP_UTF8, NULL, szU8, strlen(szU8), wszString, wcsLen);
-	//×îºó¼ÓÉÏ'\0'  
+	//æœ€åŽåŠ ä¸Š'\0'  
 	wszString[wcsLen] = '\0';
 	return wszString;
 }
 
-//½«¿í×Ö½Úwchar_t*×ª»¯Îªµ¥×Ö½Úchar*    
+//å°†å®½å­—èŠ‚wchar_t*è½¬åŒ–ä¸ºå•å­—èŠ‚char*    
 char* OCR::UnicodeToAnsi(const wchar_t* szStr)
 {
 	int nLen = WideCharToMultiByte(CP_ACP, 0, szStr, -1, NULL, 0, NULL, NULL);
@@ -73,12 +73,12 @@ bool OCR::getResult(Mat srcImg, int nROILeft, int nROITop, int nROIWidth, int nR
 
 	//imwrite("OCR.bmp", ROIImg);
 
-	// tesseractÊÇÃüÁî¿Õ¼ä£¬TessBaseAPIÊÇÀàÃû,¶¨ÒåÒ»¶ÔÏópAPI
+	// tesseractæ˜¯å‘½ä»¤ç©ºé—´ï¼ŒTessBaseAPIæ˜¯ç±»å,å®šä¹‰ä¸€å¯¹è±¡pAPI
 	tesseract::TessBaseAPI *pTess = new tesseract::TessBaseAPI();
 	// Initialize tesseract-ocr with English, without specifying tessdata path
-	// ²ÎÊý1£º»·¾³±äÁ¿ÄÚÉèÖÃµÄtessdataÂ·¾¶£»
-	// ²ÎÊý2£ºÊ¶±ðÐèÒªµÄÓïÑÔ£¬ÓïÑÔÖ®¼ä²»ÄÜ¼Ó¿Õ¸ñ£»
-	// ÁÄÌì³ÌÐòÊ¹ÓÃÓïÑÔÎª£ºchi_sim
+	// å‚æ•°1ï¼šçŽ¯å¢ƒå˜é‡å†…è®¾ç½®çš„tessdataè·¯å¾„ï¼›
+	// å‚æ•°2ï¼šè¯†åˆ«éœ€è¦çš„è¯­è¨€ï¼Œè¯­è¨€ä¹‹é—´ä¸èƒ½åŠ ç©ºæ ¼ï¼›
+	// èŠå¤©ç¨‹åºä½¿ç”¨è¯­è¨€ä¸ºï¼šchi_sim
 	//if (pTess->Init(NULL, "chi_sim+eng"))  // "D:/Program Files (x86)/tessdata/"  "chi_sim"
 	if (pTess->Init(NULL, pcLang))
 	{
@@ -86,11 +86,11 @@ bool OCR::getResult(Mat srcImg, int nROILeft, int nROITop, int nROIWidth, int nR
 		return false;
 	}
 
-	// setup, ²ÎÊý£ºPSM_AUTOÊ¶±ðÎªÊú×Å·½Ïò
-	// PSM_AUTO_ONLY: ÓÃÓÚÕûÆªÎÄ×ÖµÄÊ¶±ð£¬ÈçÁÄÌì½ØÆÁÐÅÏ¢
-	// PSM_SINGLE_LINE: ÓÃÓÚÒ»ÐÐÎÄ×ÖµÄÊ¶±ð£¬Èç½ÇÉ«Ãû¡¢Çø·þµÈ
-	// PSM_AUTO: ÓÃÓÚ´¹Ö±Ò»ÁÐÁÐµÄ·½Ïò
-	// PSM_SINGLE_BLOCK:ÓÃÓÚÒ»ÐÐÒ»ÐÐµÄÊ¶±ð,Í¬Ò»ÐÐµÄÎÄ×Ö¼ä²»ÄÜÓÐ´ó¼äÏ¶
+	// setup, å‚æ•°ï¼šPSM_AUTOè¯†åˆ«ä¸ºç«–ç€æ–¹å‘
+	// PSM_AUTO_ONLY: ç”¨äºŽæ•´ç¯‡æ–‡å­—çš„è¯†åˆ«ï¼Œå¦‚èŠå¤©æˆªå±ä¿¡æ¯
+	// PSM_SINGLE_LINE: ç”¨äºŽä¸€è¡Œæ–‡å­—çš„è¯†åˆ«ï¼Œå¦‚è§’è‰²åã€åŒºæœç­‰
+	// PSM_AUTO: ç”¨äºŽåž‚ç›´ä¸€åˆ—åˆ—çš„æ–¹å‘
+	// PSM_SINGLE_BLOCK:ç”¨äºŽä¸€è¡Œä¸€è¡Œçš„è¯†åˆ«,åŒä¸€è¡Œçš„æ–‡å­—é—´ä¸èƒ½æœ‰å¤§é—´éš™
 	//pTess->SetPageSegMode(tesseract::PageSegMode::PSM_SINGLE_BLOCK); // PSM_SINGLE_BLOCK  PSM_SINGLE_LINE
 	pTess->SetPageSegMode(mode);
 	pTess->SetVariable("save_best_choices", "T");
@@ -100,7 +100,7 @@ bool OCR::getResult(Mat srcImg, int nROILeft, int nROITop, int nROIWidth, int nR
 	//pTess->SetImage
 	pTess->Recognize(0);
 
-	// Get OCR result£¬ÓÉÓÚÖÐÎÄÏÔÊ¾ÎªÂÒÂë£¬UTF¸ñÊ½Ó¢ÎÄÕ¼1¸ö×Ö½Ú£¬ÖÐÎÄÕ¼3¸ö×Ö½Ú
+	// Get OCR resultï¼Œç”±äºŽä¸­æ–‡æ˜¾ç¤ºä¸ºä¹±ç ï¼ŒUTFæ ¼å¼è‹±æ–‡å 1ä¸ªå­—èŠ‚ï¼Œä¸­æ–‡å 3ä¸ªå­—èŠ‚
 	char *pOutText = pTess->GetUTF8Text();
 	wchar_t *pTempChar = Utf_8ToUnicode(pOutText);
 	pcRstText = UnicodeToAnsi(pTempChar);
